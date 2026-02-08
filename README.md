@@ -15,6 +15,13 @@ https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/toggl
 - Install:  
 https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/youtube-progress-bar-red.user.js
 
+### Copy LeetCode Problem + Code
+- Site: https://leetcode.com  
+- Description: Adds a toolbar button to copy the current problem description and solution code  
+- Install:  
+https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/leetcode-copy-problem-code.user.js
+
+
 ## Requirements
 - Tampermonkey browser extension
 
