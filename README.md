@@ -17,7 +17,7 @@ https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/youtu
 
 ### Copy LeetCode Problem + Code
 - Site: https://leetcode.com  
-- Description: Adds a toolbar button to copy the current problem description and solution code  
+- Description: Adds toolbar buttons to copy the LeetCode problem description, solution code, testcases, and execution results.
 - Install:  
 https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/leetcode-copy-problem-code.user.js
 
