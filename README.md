@@ -21,6 +21,12 @@ https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/youtu
 - Install:  
 https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/leetcode-copy-problem-code.user.js
 
+### LeetCode Difficulty Rating
+- Site: https://leetcode.com
+- Description: Replaces difficulty labels with contest-based rating values. If a problem has no rating data, its original difficulty label is kept unchanged.
+- Install:
+https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/leetcode-difficulty-rating.user.js
+
 ### ChatGPT Thinking Toggle Button
 - Site: https://chatgpt.com  
 - Description: Adds a custom button next to the mic button to toggle "Thinking" mode.  
