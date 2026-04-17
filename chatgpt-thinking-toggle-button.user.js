@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ChatGPT Thinking Toggle Button
 // @namespace    https://github.com/ARYAN-9099/tampermonkey-userscripts
-// @version      1.1
+// @version      1.2
 // @description  Adds a custom button to toggle "Thinking" mode next to the mic button on chatgpt.com
 // @match        https://chatgpt.com/*
 // @grant        none
@@ -43,13 +43,14 @@
     if (document.getElementById(BUTTON_ID)) return;
 
     const micButton = document.querySelector(
-      'button[aria-label="Dictate button"]',
+      'button[aria-label="Start dictation"], button[aria-label="Dictate button"], button[aria-label="Start Voice"]',
     );
 
     if (!micButton) return;
 
     const micContainer = micButton.closest("span");
-    const parentContainer = micContainer?.parentElement;
+    const insertBeforeNode = micContainer || micButton;
+    const parentContainer = insertBeforeNode.parentElement;
 
     if (!parentContainer) return;
 
@@ -75,7 +76,7 @@
       runUserLogic();
     });
 
-    parentContainer.insertBefore(newBtn, micContainer);
+    parentContainer.insertBefore(newBtn, insertBeforeNode);
   }
 
   const observer = new MutationObserver(() => {
@@ -86,4 +87,7 @@
     childList: true,
     subtree: true,
   });
+
+  // Run once immediately so we do not rely on future mutations only.
+  addThinkingButton();
 })();
