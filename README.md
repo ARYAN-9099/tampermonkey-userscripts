@@ -10,6 +10,12 @@ Small collection of personal Tampermonkey userscripts.
 - Install:  
 https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/toggle-temporary-chat-mode.user.js
 
+### Toggle Gemini Temporary Chat Mode (Alt+T)
+- Site: https://gemini.google.com/app
+- Shortcut: Alt + T
+- Install:
+https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/toggle-temporary-chat-mode-gemini.user.js
+
 ### YouTube Progress Bar Back to Red
 - Site: https://youtube.com  
 - Install:  
@@ -32,6 +38,12 @@ https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/leetc
 - Description: Adds a custom button next to the mic button to toggle "Thinking" mode.  
 - Install:  
 https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/chatgpt-thinking-toggle-button.user.js
+
+### Focus Search Box (Slash Hotkey)
+- Site: Most websites
+- Description: Press `/` to focus a search-like input (placeholder containing search/find/ask) without blocking slash while typing.
+- Install:
+https://raw.githubusercontent.com/ARYAN-9099/tampermonkey-userscripts/main/focus-search-box.user.js
 
 
 ## Requirements

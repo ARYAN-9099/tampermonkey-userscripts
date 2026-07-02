@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Toggle Temporary Chat Mode (Alt+T)
+// @name         Toggle Temporary Chat Mode (Alt+T) ChatGPT
 // @namespace    https://github.com/ARYAN-9099/tampermonkey-userscripts
 // @version      1.1
 // @description  Press Alt+T to toggle the "Temporary Chat" mode on chatgpt.com
