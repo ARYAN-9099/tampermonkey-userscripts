@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LeetCode Difficulty Rating
 // @namespace    https://github.com/ARYAN-9099/tampermonkey-userscripts
-// @version      1.3
+// @version      1.4
 // @description  Replace LeetCode difficulty labels with contest-based rating values; keep original difficulty when no rating exists.
 // @match        https://leetcode.com/*
 // @grant        GM_getValue
@@ -136,14 +136,15 @@
                 replace(ratings, title, difficulty);
             });
 
-            // new leetcode.com/problems/*/
-            title = document.querySelector('div > a.text-lg.text-label-1.font-medium');
-            difficulty = document.querySelector('div > div.text-sm.font-medium.capitalize');
-            replace(ratings, title, difficulty);
-
-            // old leetcode.com/problems/*/
-            title = document.querySelector('div[data-cy="question-title"]');
-            difficulty = document.querySelector('div[diff="easy"],div[diff="medium"],div[diff="hard"]');
+            // leetcode.com/problems/*/ (Handles all known layout variations)
+            title = document.querySelector('div.text-title-large a') || 
+                    document.querySelector('div > a.text-lg.text-label-1.font-medium') ||
+                    document.querySelector('div[data-cy="question-title"]');
+            
+            difficulty = document.querySelector('div[class*="text-difficulty-"]') ||
+                         document.querySelector('div > div.text-sm.font-medium.capitalize') ||
+                         document.querySelector('div[diff="easy"],div[diff="medium"],div[diff="hard"]');
+                         
             replace(ratings, title, difficulty);
 
             // leetcode.com/problem-list/*/
